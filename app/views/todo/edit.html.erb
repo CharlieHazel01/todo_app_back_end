@@ -1,9 +1,8 @@
-<h2><form action="/todo/create">
+<form action="/todo/update/<%=@todo.id%>">
         <h1 id="show-h1"Edit this todo</h1>
         <a href="index.html"> Back to List </a>
         <input class="text-input" id="new-todo-description" name="description" type="text" placeholder="Add a New Todo">
         <input class="text-input" id="new-day" name="day" type="text" placeholder="Add a New Date">
         <input class="button" id="new-todo-button type="submit" value="Add Todo">
         <a href="todo/index" class="simple-link">Edit Todo</a>
-    </form>
-</h2>
+</form>

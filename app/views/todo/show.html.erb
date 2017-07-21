@@ -1,7 +1,7 @@
 <h3>Todo #<%= params[:id] %></h3>
 <h1><%= @todo.description %></h1>
 <h4><%= @todo.day %></h4>
-<a href="todo/edit/<%= @todo.id %>" class="edit-todo-button">Edit </a>
+<a href="todo/edit/update<%= @todo.id %>" class="edit-todo-button">Edit </a>
 <a href="#">Delete </a>
 <a href="index.html"> Back to List </a>
 <span class= "day-of-task"><%= @todo_day %> </span>
