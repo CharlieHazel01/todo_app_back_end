@@ -1,12 +1,12 @@
   <h1>The List</h1>
         <ul> 
-        <%= @todos.each do |todo| %>
+            <% @todos.each do |todo| %>
             <li> 
                 <input type="checkbox"> 
                 <span class="todo"><a href="show/<%= todo.id %>"> <%= todo.description %> <%= todo.day %></a>
                 </span>
             </li>
-        <%= end %>
+            <% end %>
         <!--<li> 
                <input type="checkbox"> 
                <span class="todo"><a href="show/2">Do something else Friday</a></span> 
@@ -23,10 +23,5 @@
             </li>
             -->
         </ul>
-        
-        <div id="new-todo-block">
-            <input id="new-date-box" type="text" placeholder="Add Date">
-            <input id="new-task-box" type="text" placeholder="New Task">
-            <input id="submit-button" type="submit" value="Submit">
-        </div>
+        <a href="/todo/new">Add a New Todo</a>
         <a href="show.html">Show</a>
